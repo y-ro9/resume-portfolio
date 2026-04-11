@@ -23,7 +23,7 @@ const TWITTER = "https://x.com/YashRaj2065255";
 const INSTAGRAM = "https://instagram.com/yashhraj06"; 
 
 
- SIMPLE PDF DOWNLOADER 
+ //SIMPLE PDF DOWNLOADER 
 const downloadResume = () => {
   
   const baseUrl = import.meta.env.BASE_URL || '/';
