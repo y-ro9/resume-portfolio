@@ -22,10 +22,12 @@ const LINKEDIN = "www.linkedin.com/in/yash-raj-ba4414312";
 const TWITTER = "https://x.com/YashRaj2065255"; 
 const INSTAGRAM = "https://instagram.com/yashhraj06"; 
 
-// SIMPLE PDF DOWNLOADER 
+
+ SIMPLE PDF DOWNLOADER 
 const downloadResume = () => {
   
-  const pdfUrl = '/resume.pdf'; 
+  const baseUrl = import.meta.env.BASE_URL || '/';
+  const pdfUrl = '${baseUrl}resume.pdf'; 
   
 
   const link = document.createElement('a');
@@ -40,6 +42,8 @@ const downloadResume = () => {
  
   toast.success('Resume Downloaded Successfully! 📄');
 };
+
+
 // ============================================
 // CYBERSECURITY PROJECTS 
 // ============================================
