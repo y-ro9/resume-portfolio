@@ -30,10 +30,10 @@ This is my personal portfolio website built with modern web technologies. It sho
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/your-portfolio.git
+git clone https://github.com/y-ro9/resume-portfolio.git
 
 # Navigate to project directory
-cd your-portfolio
+cd resume-portfolio
 
 # Install dependencies
 npm install
@@ -60,7 +60,7 @@ src/
 
 🌐 Deployment
 
-The portfolio is deployed on [Vercel/Netlify/GitHub Pages - choose yours]
+The portfolio is deployed on GitHub Pages
 📝 Scripts
 
     npm run dev - Start development server
@@ -76,15 +76,15 @@ The portfolio is deployed on [Vercel/Netlify/GitHub Pages - choose yours]
 This project is open source and available under the MIT License.
 📬 Contact
 
-    Your Name - [Your Email]
+    Your Name - yr662003@gmail.com
 
-    Portfolio - [Your Portfolio URL]
+    Portfolio - https://y-ro9.github.io/resume-portfolio
 
-    GitHub - [Your GitHub]
+    GitHub - https://github.com/y-ro9
 
-    LinkedIn - [Your LinkedIn]
+    LinkedIn - http://www.linkedin.com/in/yash-raj-ba4414312
 
-⭐️ Built with passion by [Your Name]
+⭐️ Built with passion by Yash Raj
 text
 
 
@@ -93,15 +93,15 @@ To make it even more personalized, add these sections based on your actual portf
 ```markdown
 ## 🎨 Color Scheme
 
-- Primary: `#your-color`
-- Secondary: `#your-color`
-- Accent: `#your-color`
+- Primary: `#ff2d55`
+- Secondary: `#00ff41`
+- Accent: `#00f9ff`
 
 ## 🖼️ Featured Projects
 
-1. **[Project Name]** - Brief description
-2. **[Project Name]** - Brief description
-3. **[Project Name]** - Brief description
+1. **Password Strength Analyzer** - Prevent Entropy & Brute-Force Attack
+2. **Network Port Scanner** - Scan all Open-Ports
+3. **[Upcoming]** - Brief description
 
 ## 💻 Tech Stack
 
