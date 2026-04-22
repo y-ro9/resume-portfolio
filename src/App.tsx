@@ -115,8 +115,8 @@ const skills = [
 // CYBERSECURITY ACHIEVEMENTS 
 const achievements = [
   { icon: Award, title: "OSCP Prep", desc: "PWK Labs Completed", sub: "100% Machines" },
-  { icon: Star, title: "CTF Competitions", desc: "Winner — NullCon CTF 2024", sub: "1st in Web/Pwn" },
-  { icon: Users, title: "Bug Bounty", desc: "₹2.8L+ Rewards Earned", sub: "HackerOne + Bugcrowd" },
+  { icon: Star, title: "CTF Competitions", desc: "Participant — NullCon CTF 2024", sub: "Web/Pwn" },
+  { icon: Users, title: "Bug Bounty", desc: "Rewards Earned", sub: "HackerOne + Bugcrowd" },
   { icon: Zap, title: "eJCA Certified", desc: "Junior Cyber Security Analyst", sub: "CISCO" },
   { icon: Award, title: "CVE Contributor", desc: "14 Responsible Disclosures", sub: "CVEs Assigned" },
 ];
@@ -125,7 +125,7 @@ const achievements = [
 const education = [
   { degree: `${BRANCH}`, school: COLLEGE, year: "2023 — Present", score: "CGPA: 8.0 / 10" },
   { degree: "Class 12th (Science)", school: "R.S.S Evening College, Munger", year: "2023", score: "62.4%" },
-  { degree: "Class 10th", school: "Nath Public School, Lakhisarai", year: "2020", score: "59.8%" },
+  { degree: "Industrial Training Institute", school: "Govt I.T.I College, Munger", year: "2022", score: "70.7%" },
 ];
 
 // HACKING EXPERIENCE 
