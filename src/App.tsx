@@ -10,14 +10,14 @@ import { Toaster, toast } from 'sonner';
 
 
 const NAME = "Yash Raj"; 
-const ROLE = "Ethical Hacker • Penetration Tester • Red Team"; 
+const ROLE = "Ethical Hacker • Penetration Tester • Cyber Security Analyst"; 
 const COLLEGE = "Jagannath University Jaipur"; 
-const BRANCH = "BTech Computer Science Engineering";
-const YEAR = "3rd Year";
+const BRANCH = "BTech Computer Science & Engineering";
+const YEAR = "Final Year";
 const EMAIL = "yr662003@gmail.com"; 
 const PHONE = "+91 6299209918"; 
 const LOCATION = "Jaipur, India";
-const GITHUB = "https://github.com/y-ro9";
+const GITHUB = "https://github.com/y-ro9/Projects";
 const LINKEDIN = "www.linkedin.com/in/yash-raj-ba4414312"; 
 const TWITTER = "https://x.com/YashRaj2065255"; 
 const INSTAGRAM = "https://instagram.com/yashhraj06"; 
@@ -27,7 +27,7 @@ const INSTAGRAM = "https://instagram.com/yashhraj06";
 const downloadResume = () => {
   
   const baseUrl = import.meta.env.BASE_URL || '/';
-  const pdfUrl = '${baseUrl}resume.pdf'; 
+  const pdfUrl = `${baseUrl}resume.pdf`; 
   
 
   const link = document.createElement('a');
@@ -54,7 +54,7 @@ const projects = [
     desc: "Automated reconnaissance & vulnerability scanner. Discovers subdomains, open ports, web technologies, and runs 40+ CVE checks in minutes.",
     longDesc: "Built a powerful offensive security toolkit combining Nmap, Nikto, Dirb, and custom Python scripts. Generates professional HTML/PDF pentest reports with CVSS scoring and remediation.",
     tech: ["Python", "Nmap", "Bash", "Flask", "SQLite"],
-    image: "/images/project1.jpg",
+    image: "/resume-portfolio/images/project1.jpg",
     liveDemoType: "recon",
     github: "https://github.com/aryanmalhotra/phantomrecon"
   },
@@ -64,7 +64,7 @@ const projects = [
     desc: "Modular exploit development & payload generation framework. Includes custom reverse shells, AV evasion, and post-exploitation modules.",
     longDesc: "Designed a Metasploit-like framework from scratch in Python. Supports shellcode encoding, polymorphic payloads, encrypted C2 channels, and automated privilege escalation chains.",
     tech: ["Python", "C", "Assembly", "Metasploit", "Cryptography"],
-    image: "/images/project2.jpg",
+    image: "/resume-portfolio/images/project2.jpg",
     liveDemoType: "exploit",
     github: "https://github.com/aryanmalhotra/darksploit"
   },
@@ -74,7 +74,7 @@ const projects = [
     desc: "Advanced cryptanalysis toolkit. Cracks weak hashes, performs dictionary + brute-force attacks, and breaks classical ciphers with AI assistance.",
     longDesc: "Implements Rainbow Tables, Markov chains, and GPU-accelerated hashcat-style cracking. Breaks MD5/SHA1 in seconds. Includes frequency analysis & Vigenère solver.",
     tech: ["Python", "Hashcat", "CUDA", "Cryptography", "React"],
-    image: "/images/project3.jpg",
+    image: "/resume-portfolio/images/project3.jpg",
     liveDemoType: "crack",
     github: "https://github.com/aryanmalhotra/cipherbreak"
   },
@@ -84,7 +84,7 @@ const projects = [
     desc: "Real-time network packet sniffer & intrusion detection system. Detects ARP spoofing, port scans, and exfiltration attempts live.",
     longDesc: "Wireshark-grade analyzer built with Scapy & Python. Features protocol dissection, malicious pattern detection, PCAP export, and beautiful live graphs of network threats.",
     tech: ["Python", "Scapy", "Wireshark", "Flask", "D3.js"],
-    image: "/images/project4.jpg",
+    image: "/resume-portfolio/images/project4.jpg",
     liveDemoType: "netscan",
     github: "https://github.com/aryanmalhotra/netshadow"
   },
@@ -94,7 +94,7 @@ const projects = [
     desc: "ML-powered SOC platform detecting APTs and zero-day intrusions. 97.8% accuracy on CICIDS benchmark. Automated threat hunting.",
     longDesc: "Next-gen threat intelligence using Isolation Forest + LSTM autoencoders. Real-time dashboards, IOC correlation, and automated incident response playbooks.",
     tech: ["Python", "Scikit-learn", "TensorFlow", "React", "Kafka"],
-    image: "/images/project5.jpg",
+    image: "/resume-portfolio/images/project5.jpg",
     liveDemoType: "security",
     github: "https://github.com/aryanmalhotra/shieldnet"
   }
@@ -114,16 +114,16 @@ const skills = [
 
 // CYBERSECURITY ACHIEVEMENTS 
 const achievements = [
-  { icon: Award, title: "OSCP Prep", desc: "PWK Labs Completed", sub: "100% Machines" },
-  { icon: Star, title: "CTF Competitions", desc: "Participant — NullCon CTF 2024", sub: "Web/Pwn" },
-  { icon: Users, title: "Bug Bounty", desc: "Rewards Earned", sub: "HackerOne + Bugcrowd" },
+  { icon: Award, title: "eJCA Certified", desc: "Network Engineer", sub: "CISCO" },
   { icon: Zap, title: "eJCA Certified", desc: "Junior Cyber Security Analyst", sub: "CISCO" },
-  { icon: Award, title: "CVE Contributor", desc: "14 Responsible Disclosures", sub: "CVEs Assigned" },
+  { icon: Star, title: "Ethical Hacker", desc: "Ethical Hacking and Cybersecurity Intern", sub: "VaultOfCodes" },
+  { icon: Users, title: "Cyber Security", desc: "Google Cybersecurity Certificate", sub: "Google" },
+  { icon: Award, title: "Linux User", desc: "Command Line in Linux", sub: "Coursera" },
 ];
 
 // Education Data
 const education = [
-  { degree: `${BRANCH}`, school: COLLEGE, year: "2023 — Present", score: "CGPA: 8.0 / 10" },
+  { degree: `${BRANCH}`, school: COLLEGE, year: "2023 — Present", score: "CGPA: 7.5 / 10" },
   { degree: "Class 12th (Science)", school: "R.S.S Evening College, Munger", year: "2023", score: "62.4%" },
   { degree: "Industrial Training Institute", school: "Govt I.T.I College, Munger", year: "2022", score: "70.7%" },
 ];
@@ -141,7 +141,14 @@ const experiences = [
     company: "Cisco Networking Academy",
     period: "Jun 2024 — Sep 2024",
     desc: "Write Automation Scripts. Scripts for Network Devices."
-  }
+  },
+  {
+    role: "Intern in Ethical Hacking and Cybersecurity",
+    company: "VaultOfCodes",
+    period: "Jun 2026 — Aug 2026",
+    desc: "ained practical exposure to cybersecurity concepts, ethical hacking practices, and security fundamentals."
+  }  
+
 ];
 
 // ============================================
@@ -587,32 +594,107 @@ export default function Portfolio() {
       </nav>
 
       {/* ========== HERO - TADAKTA BHADAKTA FIRST IMPRESSION ========== */}
-      <section id="home" className="relative min-h-[100dvh] flex items-center justify-center pt-20 bg-[#0a0a0f]">
-        <ParticleBackground />
-        <div className="absolute inset-0 bg-[radial-gradient(#1f2533_0.6px,transparent_1px)] bg-[length:5px_5px] z-10" />
-        
-        <div className="relative z-20 text-center px-6 max-w-5xl">
-          <div className="mb-4 inline-block px-5 py-1.5 rounded-full border border-white/15 text-xs tracking-[3px] text-white/60">JAIPUR • INDIA</div>
-          
-          <div data-text={NAME} className=" text-[86px] md:text-[118px] leading-[0.82] font-black tracking-[-6.8px] mb-2 neon-text">{NAME}</div>
-          
-          <div className="text-xl md:text-3xl text-[var(--hack-green)] font-mono tracking-[4px] mb-4">[{ROLE}]</div>
-          
-          <div className="text-xl md:text-[26px] text-white/70 mb-10 tracking-tight">
-            {YEAR} {BRANCH} @ {COLLEGE.split('(')[0]} — <span className="text-[var(--hack-cyan)]">Breaking systems to make them stronger.</span>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button onClick={() => scrollTo('Projects')} className="neon-button group flex items-center justify-center gap-3 px-11 py-5 rounded-2xl bg-white text-black text-lg font-semibold active:scale-[0.985]">
-              EXPLORE PROJECTS <ArrowRight className="group-hover:translate-x-0.5 transition" />
-            </button>
-            <button onClick={downloadResume} className="flex items-center justify-center gap-3 px-9 py-5 rounded-2xl border-2 border-white/70 hover:border-white text-lg font-medium transition active:bg-white/5">
-              <Download size={21} /> DOWNLOAD RESUME
-            </button>
-          </div>
-          <motion.div animate={{ y: [0, 12, 0] }} transition={{duration: 2.1, repeat: Infinity}} className="absolute bottom-12 left-1/2 -translate-x-1/2 text-white/40"><ChevronDown size={26} /></motion.div>
-        </div>
-      </section>
+      <section
+  id="home"
+  className="relative min-h-[100dvh] flex items-center justify-center pt-20 bg-[#080a0d] overflow-hidden hero-home"
+>
+  <ParticleBackground />
+
+  {/* Background Grid */}
+  <div className="absolute inset-0 hero-grid z-10 pointer-events-none" />
+
+  {/* Ambient Glow */}
+  <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[850px] h-[500px] rounded-full bg-cyan-400/[0.035] blur-[140px] z-10 pointer-events-none" />
+
+  <div className="relative z-20 w-full max-w-7xl mx-auto px-6 md:px-10">
+
+    <div className="max-w-6xl mx-auto text-center">
+
+      {/* Small Top Label */}
+      <div className="hero-eyebrow mb-8">
+        <span className="hero-status-dot" />
+        CYBERSECURITY • ETHICAL HACKING • JAIPUR
+      </div>
+
+      {/* HUGE NAME */}
+      <h1 className="hero-name">
+        <span className="hero-name-main">YASH</span>
+        <span className="hero-name-accent"> RAJ</span>
+      </h1>
+
+      {/* Role */}
+      <div className="hero-role">
+        <span className="hero-bracket">&lt;</span>
+        Ethical Hacker&nbsp; • &nbsp;Penetration Tester&nbsp; • &nbsp;Cyber Security Analyst
+        <span className="hero-bracket">/&gt;</span>
+      </div>
+
+      {/* Short Intro */}
+      <p className="hero-intro">
+        Final Year B.Tech Computer Science & Engineering
+      </p>
+
+      <p className="hero-college">
+        {COLLEGE.split('(')[0]}
+      </p>
+
+      {/* Tagline */}
+      <div className="hero-tagline-wrapper">
+        <span className="hero-line" />
+        <p className="hero-tagline">
+          Breaking systems to make them stronger.
+        </p>
+        <span className="hero-line" />
+      </div>
+
+      {/* Buttons */}
+      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-11">
+
+        <button
+          onClick={() => scrollTo('Projects')}
+          className="hero-primary-btn group flex items-center justify-center gap-3 px-10 py-4 rounded-xl"
+        >
+          <span>EXPLORE PROJECTS</span>
+          <ArrowRight
+            size={19}
+            className="group-hover:translate-x-1 transition-transform duration-200"
+          />
+        </button>
+
+        <button
+          onClick={downloadResume}
+          className="hero-secondary-btn flex items-center justify-center gap-3 px-9 py-4 rounded-xl"
+        >
+          <Download size={19} />
+          <span>DOWNLOAD RESUME</span>
+        </button>
+
+      </div>
+
+      {/* Bottom Meta */}
+      <div className="hero-meta">
+        <span>PYTHON</span>
+        <span>•</span>
+        <span>LINUX</span>
+        <span>•</span>
+        <span>NETWORK SECURITY</span>
+        <span>•</span>
+        <span>PENTESTING</span>
+      </div>
+
+    </div>
+
+    {/* Scroll Indicator */}
+    <motion.div
+      animate={{ y: [0, 8, 0] }}
+      transition={{ duration: 2.2, repeat: Infinity }}
+      className="absolute bottom-7 left-1/2 -translate-x-1/2 text-white/25"
+    >
+      <ChevronDown size={22} />
+    </motion.div>
+
+  </div>
+</section>
 
       {/* ========== ABOUT ========== */}
       <section id="about" className="max-w-5xl mx-auto px-6 pt-24 pb-20">
@@ -627,8 +709,8 @@ export default function Portfolio() {
             </div>
             
             <div className="flex gap-4 mt-9">
-              <div className="px-6 py-3 rounded-2xl bg-white/5 border border-white/10 text-sm"><span className="text-[var(--neon-blue)]">8.9</span> CGPA</div>
-              <div className="px-6 py-3 rounded-2xl bg-white/5 border border-white/10 text-sm">100+ LeetCode</div>
+              <div className="px-6 py-3 rounded-2xl bg-white/5 border border-white/10 text-sm"><span className="text-[var(--neon-blue)]">7.5</span> CGPA</div>
+              <div className="px-6 py-3 rounded-2xl bg-white/5 border border-white/10 text-sm">Junior Cyber Security Analyst</div>
               <div className="px-6 py-3 rounded-2xl bg-white/5 border border-white/10 text-sm">3+ Projects Shipped</div>
             </div>
           </div>
@@ -638,7 +720,7 @@ export default function Portfolio() {
             <div className="relative group">
               <div className="absolute -inset-8 bg-gradient-to-r from-[var(--neon-blue)] via-[var(--neon-purple)] to-[var(--neon-pink)] rounded-full blur-3xl opacity-20 group-hover:opacity-35 transition" />
               <div className="relative w-[330px] h-[330px] rounded-full border-[13px] border-[#111] overflow-hidden ring-1 ring-white/30 shadow-[0_0_120px_-10px_rgb(0,243,255)]">
-                <img src="/images/profile.jpg" alt={NAME} className="w-full h-full object-cover scale-[1.08] group-hover:scale-100 transition-transform duration-700" />
+                <img src="/resume-portfolio/images/profile.jpg" alt={NAME} className="w-full h-full object-cover scale-[1.08] group-hover:scale-100 transition-transform duration-700" />
               </div>
               <div className="absolute -bottom-4 -right-4 px-6 py-2.5 rounded-full bg-black border border-[var(--neon-blue)] text-xs tracking-widest">CURRENTLY BUILDING • ALWAYS LEARNING</div>
             </div>
@@ -797,7 +879,7 @@ export default function Portfolio() {
                 <textarea value={formData.message} onChange={e => updateForm('message', e.target.value)} placeholder="TELL ME ABOUT YOUR PROJECT OR JUST SAY HELLO..." rows={5} className="w-full resize-y bg-transparent border-b border-white/20 py-4 text-xl placeholder:text-white/30 focus:outline-none" />
                 {formErrors.message && <div className="text-red-400 text-sm mt-1">{formErrors.message}</div>}
               </div>
-              <button disabled={isSubmitting} type="submit" className="neon-button w-full mt-3 py-5 rounded-2xl bg-white text-xl font-bold text-black disabled:opacity-60 flex items-center justify-center gap-3">
+              <button disabled={isSubmitting} type="submit" className="neon-button contact-send-btn w-full mt-3 py-5 rounded-2xl bg-white text-xl font-bold text-black disabled:opacity-60 flex items-center justify-center gap-3">
                 {isSubmitting ? "SENDING MESSAGE..." : "SEND MESSAGE"} <ArrowRight />
               </button>
             </form>
